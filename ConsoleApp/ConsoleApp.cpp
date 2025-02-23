@@ -2,14 +2,26 @@
 
 using namespace std;
 
+class Player {
+	
+	// attribute
+	string name;
+	int health;
+
+	// method
+	void talk(string dialogue);
+	void is_dead();
+};
+
 int main()
 {
-	int numbers[] = { 1,2,3 };
-	int* num_ptr = numbers;
+	Player hero;
+	Player companion;
 
-	cout << num_ptr << endl;
-	cout << num_ptr + 1 << endl;
-	cout << num_ptr + 2 << endl;
+	Player* enemy = nullptr;
+	enemy = new Player();
+
+	delete enemy;
 
 	return 0;
 }
