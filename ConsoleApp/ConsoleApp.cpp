@@ -3,14 +3,14 @@
 using namespace std;
 
 class Player {
-public:
+private:
 	// attribute
-	string name;
-	int health;
+	string name = "Player";
+	int health = 100;
 
 public:
 	// method
-	void talk(string dialogue);
+	void talk(string dialogue) const { cout << name << " says " << dialogue << endl; };
 	void is_dead();
 };
 
@@ -22,9 +22,7 @@ int main()
 	Player* enemy = nullptr;
 	enemy = new Player();
 
-	enemy->name = "Slime";
-	enemy->health = 100;
-
+	enemy->talk("I am the enemy!");
 
 	delete enemy;
 
