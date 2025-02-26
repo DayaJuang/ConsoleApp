@@ -11,7 +11,7 @@ private:
 public:
 	// method
 	void talk(string dialogue) const { cout << name << " says " << dialogue << endl; };
-	void is_dead();
+	bool is_dead() { return health <= 0; };
 };
 
 int main()
