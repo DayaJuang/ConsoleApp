@@ -3,17 +3,6 @@
 
 using namespace std;
 
-void Player::talk(string dialogue) {
-	cout << name << " says: " << dialogue << endl;
-}
-
-bool Player::is_dead() {
-	if (health <= 0) {
-		return true;
-	}
-	return false;
-}
-
 
 int main()
 {
