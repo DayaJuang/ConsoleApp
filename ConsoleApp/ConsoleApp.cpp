@@ -1,26 +1,27 @@
 ﻿#include <iostream>
+#include "player.h"
 
 using namespace std;
 
-class Player {
-private:
-	// attribute
-	string name = "Player";
-	int health = 100;
+void Player::talk(string dialogue) {
+	cout << name << " says: " << dialogue << endl;
+}
 
-public:
-	// method
-	void talk(string dialogue) const { cout << name << " says " << dialogue << endl; };
-	bool is_dead() { return health <= 0; };
-};
+bool Player::is_dead() {
+	if (health <= 0) {
+		return true;
+	}
+	return false;
+}
+
 
 int main()
 {
-	Player hero;
-	Player companion;
-
 	Player* enemy = nullptr;
 	enemy = new Player();
+
+	enemy->set_name("Slime");
+	enemy->set_health(50);
 
 	enemy->talk("I am the enemy!");
 
