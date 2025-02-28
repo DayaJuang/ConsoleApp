@@ -7,13 +7,21 @@
 class Player {
 private:
 	// attributes
-	std::string name = "Player";
-	int health = 100;
+	std::string name;
+	int health;
 
 public:
 	// constructors
-	Player() {};
-	Player(std::string name_val) { name = name_val; };
+	Player() 
+	{
+		name = "None";
+		health = 100;
+	};
+	Player(std::string name_val) 
+	{ 
+		name = name_val; 
+		health = 100;
+	};
 	Player(std::string name_val, int health_val)
 	{
 		name = name_val;
