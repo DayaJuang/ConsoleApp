@@ -12,21 +12,9 @@ private:
 
 public:
 	// constructors
-	Player() 
-	{
-		name = "None";
-		health = 100;
-	};
-	Player(std::string name_val) 
-	{ 
-		name = name_val; 
-		health = 100;
-	};
-	Player(std::string name_val, int health_val)
-	{
-		name = name_val;
-		health = health_val;
-	};
+	Player();
+	Player(std::string name_val);
+	Player(std::string name_val, int health_val);
 
 	// destructor
 	~Player() {};
