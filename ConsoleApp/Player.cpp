@@ -1,10 +1,7 @@
 #include <iostream>
 #include "player.h"
 
-Player::Player() 
-	: Player("None", 100) { }
-Player::Player(std::string name_val) 
-	: Player(name_val,100) {}
+
 Player::Player(std::string name_val, int health_val) 
 	: name{ name_val }, health{ health_val } {}
 
