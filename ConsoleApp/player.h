@@ -14,6 +14,9 @@ public:
 	// constructors
 	Player(std::string name_val = "None", int health_val = 100);
 
+	// copy constructor
+	Player(const Player& source);
+
 	// destructor
 	~Player() {};
 
