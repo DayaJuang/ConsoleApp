@@ -6,7 +6,12 @@ Deep::Deep(int d) {
 }
 
 Deep::Deep(const Deep &source)
-	:Deep{ *source.data } {
+	: Deep{ *source.data } {
+}
+
+Deep::Deep(Deep&& source) noexcept
+	: data{ source.data } {
+	source.data = nullptr;
 }
 
 Deep::~Deep() {

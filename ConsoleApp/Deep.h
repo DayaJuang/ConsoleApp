@@ -7,6 +7,7 @@ private:
 public:
 	Deep(int d);
 	Deep(const Deep &source);
+	Deep(Deep&& source) noexcept;
 	~Deep();
 };
 
