@@ -24,7 +24,7 @@ public:
 	void set_name(std::string name) { this->name = name; };
 	std::string get_name() { return name; };
 	void set_health(int health) { this->health = health; };
-	int get_health() { return health; };
+	int get_health() const { return health; };
 
 	void talk(std::string dialogue);
 	bool is_dead();
