@@ -9,6 +9,7 @@ private:
 	// attributes
 	std::string name;
 	int health;
+	static int num_players;
 
 public:
 	// constructors
@@ -28,6 +29,8 @@ public:
 
 	void talk(std::string dialogue);
 	bool is_dead();
+
+	static int get_num_players() { return num_players; };
 };
 
 #endif // DEBUG
