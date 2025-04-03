@@ -31,6 +31,7 @@ public:
 	bool is_dead();
 
 	static int get_num_players() { return num_players; };
+	friend void display_player(const Player& p);
 };
 
 #endif // DEBUG

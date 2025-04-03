@@ -27,3 +27,9 @@ bool Player::is_dead() {
 	}
 	return false;
 }
+
+void display_player(const Player& p)
+{
+	std::cout << "Player name: " << p.name << std::endl;
+	std::cout << "Player health: " << p.health << std::endl;
+}
